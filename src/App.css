@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+    background: #141414;
+    color: white;
+}
+
+main {
+    height: 100vh;
+}
+
+.social-media-links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.social-media-links-card {
+    background: #1F1F1F;
+    width: 375px;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-picture-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-picture-description img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profile-picture-description h1 {
+    margin: 4% 0 1% 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.profile-picture-description span {
+    color: #C4F82A;
+    font-weight: 500;
+}
+
+.profile-picture-description p {
+    position: relative;
+    margin-top: 5%;
+}
+
+.profile-picture-description p::before {
+    content: ' " ';
+    position: absolute;
+    left: -8px;
+}
+
+.profile-picture-description p::after {
+    content: ' " ';
+    position: absolute;
+    right: -8px;
+}
+
+.button-group-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
+}
+
+.button-group-links button {
+    background: #333333;
+    outline: none;
+    border: none;
+    font-family: 'Jost';
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-group-links button:hover {
+    background: #C4F82A;
+}
+
+.button-group-links button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.button-group-links button:hover a {
+    color: black
+}
